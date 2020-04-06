@@ -1,14 +1,14 @@
 import os
+from pathlib import Path
 
-
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).parent.parent
 
 DEBUG = os.environ.get("DEBUG", "") == "1"
 
 SECRET_KEY = "{{ secret_key }}"
 
 # Dangerous: disable host header validation
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     "{{ project_name }}.core",
