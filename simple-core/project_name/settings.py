@@ -17,3 +17,5 @@ INSTALLED_APPS = [
 ROOT_URLCONF = "{{ project_name }}.urls"
 
 DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": "db.sqlite3"}}
+
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
