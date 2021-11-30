@@ -13,8 +13,6 @@ settings.configure(
     ALLOWED_HOSTS=["*"],
     # Make this module the urlconf
     ROOT_URLCONF=__name__,
-    # We aren't using any security features but Django requires this setting
-    SECRET_KEY="{{ secret_key }}",
 )
 
 

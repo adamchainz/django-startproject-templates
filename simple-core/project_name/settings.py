@@ -5,7 +5,6 @@ BASE_DIR = Path(__file__).parent.parent
 
 DEBUG = os.environ.get("DEBUG", "") == "1"
 
-SECRET_KEY = "{{ secret_key }}"
 
 # Dangerous: disable host header validation
 ALLOWED_HOSTS = ["*"]
