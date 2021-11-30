@@ -8,9 +8,10 @@ from django.http import HttpResponse
 from django.urls import path
 
 settings.configure(
-    DEBUG=(os.environ.get("DEBUG", "") == "1"),
     # Dangerous: disable host header validation
     ALLOWED_HOSTS=["*"],
+    # Use DEBUG=1 to enable debug mode
+    DEBUG=(os.environ.get("DEBUG", "") == "1"),
     # Make this module the urlconf
     ROOT_URLCONF=__name__,
 )
