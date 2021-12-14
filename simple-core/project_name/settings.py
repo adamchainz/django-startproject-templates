@@ -24,3 +24,5 @@ INSTALLED_APPS = [
 ]
 
 ROOT_URLCONF = "{{ project_name }}.urls"
+
+USE_TZ = True
