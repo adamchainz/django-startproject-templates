@@ -25,4 +25,14 @@ INSTALLED_APPS = [
 
 ROOT_URLCONF = "{{ project_name }}.urls"
 
+SECRET_KEY = "{{ secret_key }}"
+
+TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [],
+        "APP_DIRS": True,
+    },
+]
+
 USE_TZ = True
